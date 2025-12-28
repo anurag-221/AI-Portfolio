@@ -79,10 +79,10 @@ export const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
             >
               {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
             </button>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
+            <a href="https://github.com/anurag-221" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
               <Github size={18} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
+            <a href="https://www.linkedin.com/in/anurag-srivastava-b16b0b159/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">
               <Linkedin size={18} />
             </a>
           </div>

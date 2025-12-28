@@ -63,12 +63,12 @@ export const Skills: React.FC<{ isDarkMode: boolean }> = () => {
         </div>
 
         <div className="mt-20 pt-10 border-t border-slate-800 flex flex-wrap justify-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all">
-          <span className="mono text-2xl font-bold">REACT</span>
-          <span className="mono text-2xl font-bold">NEXT.JS</span>
-          <span className="mono text-2xl font-bold">TYPESCRIPT</span>
-          <span className="mono text-2xl font-bold">TAILWIND</span>
-          <span className="mono text-2xl font-bold">FRAMER</span>
-          <span className="mono text-2xl font-bold">THREE.JS</span>
+          <span className="mono text-2xl font-bold uppercase">REACT</span>
+          <span className="mono text-2xl font-bold uppercase">Jahia</span>
+          <span className="mono text-2xl font-bold uppercase">AEM</span>
+          <span className="mono text-2xl font-bold uppercase">NEXT.JS</span>
+          <span className="mono text-2xl font-bold uppercase">Docker</span>
+          <span className="mono text-2xl font-bold uppercase">TAILWIND</span>
         </div>
       </div>
     </section>

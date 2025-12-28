@@ -5,37 +5,54 @@ import { ExternalLink, Github, Code } from 'lucide-react';
 
 export const Projects: React.FC<{ isDarkMode: boolean }> = () => {
   const projects = [
-    {
-      title: "Kumbh Mela Website",
-      category: "Event Platform",
-      image: "https://picsum.photos/800/500?random=11",
-      tech: ["React", "Tailwind", "JSON", "Framer Motion"],
-      features: ["Dynamic event slider", "Countdown timers", "Fully responsive UI"],
-      role: "Lead Frontend Development & UI Logic",
-      link: "#",
-      github: "#"
-    },
-    {
-      title: "Expense Tracker App",
-      category: "Finance Utility",
-      image: "https://picsum.photos/800/500?random=12",
-      tech: ["React", "Expo", "JavaScript", "Context API"],
-      features: ["Expense management", "Interactive Charts", "Android/iOS Cross-platform"],
-      role: "Component Architecture & Debugging",
-      link: "#",
-      github: "#"
-    },
-    {
-      title: "Enterprise Client Work",
-      category: "Corporate Projects",
-      image: "https://picsum.photos/800/500?random=13",
-      tech: ["React", "Algolia", "TypeScript", "Vite"],
-      features: ["Advanced search logic", "Custom UI libraries", "Feature development"],
-      role: "Feature Lead & Performance Optimization",
-      link: "#",
-      github: "#"
-    }
-  ];
+  {
+    title: "Kumbh Mela Website",
+    category: "Event & Community Platform",
+    image: "/images/kumbh-mela.png",
+    tech: ["React", "Express", "Firebase", "Cloudinary", "Slick Slider", "Tailwind CSS"],
+    features: [
+      "Scared bath slider with countdown timers for key events",
+      "Create post feature: users can share stories with images",
+      "Bookmark stories to revisit later",
+      "Gallery to view all uploaded images",
+      "Like functionality for images and posts"
+    ],
+    role: "Lead Frontend Developer & UI/UX Implementation",
+    link: "#",
+    github: "#"
+  },
+  {
+    title: "Sangam Mart App",
+    category: "E-commerce Platform",
+    image: "/images/sangam-mart.png",
+    tech: ["React", "Firebase", "Cloudinary", "Tailwind CSS"],
+    features: [
+      "Product categories and trending product sections",
+      "Cart functionality with real-time updates",
+      "Login and signup authentication",
+      "Responsive and modern UI"
+    ],
+    role: "Full Frontend Development & E-commerce Integration",
+    link: "#",
+    github: "#"
+  },
+  {
+    title: "Algolia Website Migration",
+    category: "Corporate Project",
+    image: "/images/algolia.jpg",
+    tech: ["Jahia CMS", "HTML", "CSS"],
+    features: [
+      "Migrated legacy website to Jahia CMS",
+      "Developed reusable components in Jahia",
+      "Front-end implementation with HTML & CSS",
+      "Team-based development and collaboration"
+    ],
+    role: "Jahia Developer & Frontend Integration",
+    link: "#",
+    github: "#"
+  }
+];
+
 
   return (
     <section id="projects" className="py-24">
@@ -47,7 +64,7 @@ export const Projects: React.FC<{ isDarkMode: boolean }> = () => {
             </h2>
             <p className="text-slate-400">A collection of projects where I've implemented clean, maintainable code and engaging user experiences.</p>
           </div>
-          <a href="#" className="mono text-cyan-400 hover:underline flex items-center gap-2 mb-2 transition-all">
+          <a href="#projects" className="mono text-cyan-400 hover:underline flex items-center gap-2 mb-2 transition-all">
             View All Projects <Code size={16} />
           </a>
         </div>

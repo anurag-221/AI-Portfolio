@@ -6,29 +6,40 @@ import { Briefcase, GraduationCap } from 'lucide-react';
 export const Experience: React.FC<{ isDarkMode: boolean }> = () => {
   const experiences = [
     {
-      title: "Frontend Developer",
-      company: "Current Role",
+      title: "Associate Technology L1",
+      company: "Ayasya Digital Solutions",
       period: "2022 - Present",
-      description: "Leading the UI development for high-traffic React applications. Focused on component modularity, performance metrics, and seamless state management.",
-      details: ["Architecture design", "Code reviews", "Performance optimization"],
+      description: "Leading the UI development for high-traffic React applications and CMS integrations. Focused on component modularity, performance metrics, and seamless state management.",
+      details: ["CMS Integration", "Code reviews", "UI/UX", "Code Debugging"],
       icon: <Briefcase />
     },
     {
-      title: "React Developer",
-      company: "Previous Tech Firm",
-      period: "2020 - 2022",
-      description: "Built responsive dashboards and complex data visualization interfaces. Collaborated with designers to ensure pixel-perfect implementation.",
-      details: ["Dashboard implementation", "API integration", "Animation systems"],
+      title: "Frontend Developer",
+      company: "Grynow",
+      period: "2021 - 2022",
+      description: "Developed responsive dashboards and web pages, authored the blogs page, optimized SEO, fixed UI issues, and improved performance with image compression and clean HTML/CSS implementation.",
+      details: [
+        "Blogs page development",
+        "UI fixes & HTML/CSS",
+        "SEO optimization",
+        "Image compression & performance"
+      ],
       icon: <Briefcase />
     },
     {
       title: "Learning Phase",
       company: "Early Journey",
-      period: "2019 - 2020",
-      description: "Mastered JavaScript fundamentals and dove into the React ecosystem. Built various open-source projects and experimental UI components.",
-      details: ["ES6+ mastery", "Redux/Context", "Tailwind mastery"],
+      period: "2020 - 2021",
+      description: "Started with HTML and CSS, learned JavaScript fundamentals, and moved into React basics while building small projects and UI components.",
+      details: [
+        "HTML & CSS fundamentals",
+        "JavaScript basics",
+        "React basics",
+        "Bootstrap UI"
+      ],
       icon: <GraduationCap />
     }
+
   ];
 
   return (

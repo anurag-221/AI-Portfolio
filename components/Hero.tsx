@@ -25,7 +25,7 @@ export const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
       <div className="absolute inset-0 z-[1] pointer-events-none opacity-[0.03]" 
            style={{ backgroundImage: `radial-gradient(${isDarkMode ? 'white' : 'black'} 1px, transparent 1px)`, backgroundSize: '40px 40px' }} />
 
-      <div className="container mx-auto px-6 relative z-10 text-center">
+      <div className="container mx-auto px-6 relative z-10 text-center py-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
             <span>•</span>
             <span className="text-gradient font-semibold">React Specialist</span>
             <span>•</span>
-            <span className="text-gradient font-semibold">UI Engineer</span>
+            <span className="text-gradient font-semibold">CMS Developer</span>
           </motion.div>
 
           <p className="max-w-2xl mx-auto text-slate-400 md:text-lg mb-12 leading-relaxed">
@@ -69,7 +69,7 @@ export const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full sm:w-auto px-10 py-4 border-2 border-slate-700 hover:border-cyan-400 text-slate-100 font-bold rounded-full transition-all glass-effect"
+              className={`w-full sm:w-auto px-10 py-4 border-2 border-slate-700 hover:border-cyan-400 ${isDarkMode ?'text-slate-100': 'text-slate-900' } font-bold rounded-full transition-all glass-effect`}
             >
               Contact Me
             </motion.a>
@@ -80,7 +80,7 @@ export const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
       <motion.div 
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-slate-500 cursor-pointer hidden md:block"
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 text-slate-500 cursor-pointer hidden md:block"
         onClick={() => document.getElementById('about')?.scrollIntoView()}
       >
         <ChevronDown size={32} />

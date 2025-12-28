@@ -40,10 +40,13 @@ export const About: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
             
             <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
               <p>
-                I am a <span className="text-slate-100 font-medium">frontend developer with 3+ years of experience</span> building responsive, high-performance web applications.
+                I am a <span className="text-slate-100 font-medium">frontend developer with 4+ years of experience</span> building responsive, high-performance web applications.
               </p>
               <p>
                 I specialize in <span className="text-cyan-400 font-mono">React, Tailwind CSS, and modern JavaScript</span>, with a strong focus on clean UI, smooth animations, and maintainable code.
+              </p>
+              <p>
+                I also integrate content management systems (CMS) like <span className="text-slate-100 font-medium">Jahia, AEM or Strapi,</span> allowing websites to be easily scalable and content to be updated dynamically without touching the code.
               </p>
               <p>
                 My passion lies in bridging the gap between design and technology. I enjoy solving complex UI challenges, optimizing performance, and translating designs into pixel-perfect, interactive interfaces.
