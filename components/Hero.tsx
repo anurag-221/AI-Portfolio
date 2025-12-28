@@ -1,4 +1,6 @@
 
+'use client';
+
 import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
@@ -12,7 +14,6 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background Three.js Scene */}
       <div className="absolute inset-0 z-0 opacity-40">
         <Suspense fallback={<div className="w-full h-full bg-slate-900" />}>
           <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
@@ -21,7 +22,6 @@ export const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
         </Suspense>
       </div>
 
-      {/* Subtle Grid Overlay */}
       <div className="absolute inset-0 z-[1] pointer-events-none opacity-[0.03]" 
            style={{ backgroundImage: `radial-gradient(${isDarkMode ? 'white' : 'black'} 1px, transparent 1px)`, backgroundSize: '40px 40px' }} />
 

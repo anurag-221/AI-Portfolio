@@ -1,4 +1,6 @@
 
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Sun, Moon, Github, Linkedin } from 'lucide-react';
@@ -57,7 +59,6 @@ export const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
           <span className="text-cyan-400">/&gt;</span>
         </motion.div>
 
-        {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a 
@@ -73,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
           <div className="flex items-center space-x-4 ml-4 border-l border-slate-700 pl-6">
             <button 
               onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-slate-800 transition-colors"
+              className="p-2 rounded-full hover:bg-slate-800 transition-colors text-inherit"
               aria-label="Toggle theme"
             >
               {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
@@ -87,7 +88,6 @@ export const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
           </div>
         </div>
 
-        {/* Mobile Toggle */}
         <div className="md:hidden flex items-center space-x-4">
           <button onClick={toggleTheme} className="p-2">
             {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -98,7 +98,6 @@ export const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div

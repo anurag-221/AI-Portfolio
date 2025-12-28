@@ -1,7 +1,9 @@
 
+'use client';
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mail, MapPin, Phone, Github, Linkedin, Twitter } from 'lucide-react';
+import { Send, Mail, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
 
 export const Contact: React.FC<{ isDarkMode: boolean }> = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -18,7 +20,6 @@ export const Contact: React.FC<{ isDarkMode: boolean }> = () => {
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
-      {/* Background Accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-cyan-500/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -82,7 +83,7 @@ export const Contact: React.FC<{ isDarkMode: boolean }> = () => {
                     value={formState.name}
                     onChange={(e) => setFormState({...formState, name: e.target.value})}
                     placeholder="Jane Doe" 
-                    className="w-full px-6 py-4 bg-slate-900/50 rounded-xl border border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition-all"
+                    className="w-full px-6 py-4 bg-slate-900/50 rounded-xl border border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition-all text-white"
                   />
                 </div>
                 <div className="space-y-2">
@@ -93,7 +94,7 @@ export const Contact: React.FC<{ isDarkMode: boolean }> = () => {
                     value={formState.email}
                     onChange={(e) => setFormState({...formState, email: e.target.value})}
                     placeholder="jane@example.com" 
-                    className="w-full px-6 py-4 bg-slate-900/50 rounded-xl border border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition-all"
+                    className="w-full px-6 py-4 bg-slate-900/50 rounded-xl border border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition-all text-white"
                   />
                 </div>
               </div>
@@ -105,13 +106,14 @@ export const Contact: React.FC<{ isDarkMode: boolean }> = () => {
                   value={formState.message}
                   onChange={(e) => setFormState({...formState, message: e.target.value})}
                   placeholder="Tell me about your project..."
-                  className="w-full px-6 py-4 bg-slate-900/50 rounded-xl border border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition-all resize-none"
+                  className="w-full px-6 py-4 bg-slate-900/50 rounded-xl border border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 outline-none transition-all resize-none text-white"
                 />
               </div>
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 disabled={isSent}
+                type="submit"
                 className={`w-full py-5 rounded-xl font-bold text-lg flex items-center justify-center gap-3 transition-all ${
                   isSent ? 'bg-green-500 text-white' : 'bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-900 hover:shadow-lg hover:shadow-cyan-500/20'
                 }`}
