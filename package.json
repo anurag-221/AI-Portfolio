@@ -1,4 +1,3 @@
-
 {
   "name": "anurag-portfolio",
   "version": "0.1.0",
@@ -10,23 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.105.0",
+    "@react-three/fiber": "^8.17.14",
+    "framer-motion": "^11.11.17",
+    "lucide-react": "^0.454.0",
+    "next": "14.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "next": "14.2.0",
-    "three": "^0.164.1",
-    "@react-three/fiber": "^8.17.14",
-    "@react-three/drei": "^9.105.0",
-    "framer-motion": "^11.11.17",
-    "lucide-react": "^0.454.0"
+    "three": "^0.164.1"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.1",
     "@types/three": "^0.164.1",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
     "typescript": "^5.4.5"
   }
 }

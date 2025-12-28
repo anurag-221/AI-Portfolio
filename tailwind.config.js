@@ -1,24 +1,12 @@
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx}",    // App Router
+    "./pages/**/*.{js,ts,jsx,tsx}",  // Pages Router
+    "./components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
-      },
-      colors: {
-        slate: {
-          900: '#0f172a',
-        }
-      }
-    },
+    extend: {},
   },
   plugins: [],
-  darkMode: 'class',
 }
