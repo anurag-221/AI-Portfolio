@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Home from './app/page';
+import Home from './app/page.tsx';
 
 // This file serves as a bridge for environments that look for App.tsx
 const App: React.FC = () => {

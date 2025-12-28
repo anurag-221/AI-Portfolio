@@ -4,7 +4,7 @@
 import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
-import { Scene } from './Scene';
+import { Scene } from './Scene.tsx';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 
 interface HeroProps {
