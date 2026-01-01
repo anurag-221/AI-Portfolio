@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Code } from 'lucide-react';
 
-export const Projects: React.FC<{ isDarkMode: boolean }> = () => {
+export const Projects: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
   const projects = [
   {
     title: "Kumbh Mela Website",
@@ -64,7 +64,7 @@ export const Projects: React.FC<{ isDarkMode: boolean }> = () => {
             </h2>
             <p className="text-slate-400">A collection of projects where I've implemented clean, maintainable code and engaging user experiences.</p>
           </div>
-          <a href="#projects" className="mono text-cyan-400 hover:underline flex items-center gap-2 mb-2 transition-all">
+          <a href="#projects" className="text-cyan-400 hover:underline flex items-center gap-2 mb-2 transition-all">
             View All Projects <Code size={16} />
           </a>
         </div>
@@ -116,7 +116,7 @@ export const Projects: React.FC<{ isDarkMode: boolean }> = () => {
               
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((t, i) => (
-                  <span key={i} className="mono text-[10px] uppercase tracking-widest text-slate-500 bg-slate-800/50 px-2 py-1 rounded">
+                  <span key={i} className={`text-[10px] uppercase tracking-widest ${isDarkMode ? 'text-slate-400' : 'text-slate-100'} bg-slate-800/50 px-2 py-1 rounded`}>
                     {t}
                   </span>
                 ))}

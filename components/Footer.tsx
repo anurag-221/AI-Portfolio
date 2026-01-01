@@ -8,7 +8,7 @@ export const Footer: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
           <div>
-            <div className="text-2xl font-bold mono mb-4">
+            <div className="text-2xl font-bold mb-4">
               <span className="text-cyan-400">&lt;</span>
               Anurag
               <span className="text-cyan-400">/&gt;</span>

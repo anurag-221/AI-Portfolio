@@ -28,7 +28,7 @@ export const Skills: React.FC<{ isDarkMode: boolean }> = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 bg-slate-800/30">
+    <section id="skills" className="py-24 bg-slate-800/10">
       <div className="container mx-auto px-6">
         <div className="mb-16 text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Technical Toolkit</h2>

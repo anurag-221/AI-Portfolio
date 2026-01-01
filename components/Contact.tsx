@@ -46,7 +46,7 @@ export const Contact: React.FC<{ isDarkMode: boolean }> = () => {
                   <Mail />
                 </div>
                 <div>
-                  <p className="text-xs text-slate-500 uppercase font-bold mono">
+                  <p className="text-xs text-slate-500 uppercase font-bold">
                     Email me
                   </p>
                   <p className="text-lg font-medium">
@@ -59,7 +59,7 @@ export const Contact: React.FC<{ isDarkMode: boolean }> = () => {
                   <MapPin />
                 </div>
                 <div>
-                  <p className="text-xs text-slate-500 uppercase font-bold mono">
+                  <p className="text-xs text-slate-500 uppercase font-bold">
                     Location
                   </p>
                   <p className="text-lg font-medium">Delhi, India</p>
@@ -100,7 +100,7 @@ export const Contact: React.FC<{ isDarkMode: boolean }> = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium mono text-slate-400 ml-1">
+                  <label className="text-sm font-medium  text-slate-400 ml-1">
                     Your Name
                   </label>
                   <input
@@ -115,7 +115,7 @@ export const Contact: React.FC<{ isDarkMode: boolean }> = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium mono text-slate-400 ml-1">
+                  <label className="text-sm font-medium  text-slate-400 ml-1">
                     Your Email
                   </label>
                   <input
@@ -131,7 +131,7 @@ export const Contact: React.FC<{ isDarkMode: boolean }> = () => {
                 </div>
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium mono text-slate-400 ml-1">
+                <label className="text-sm font-medium text-slate-400 ml-1">
                   Message
                 </label>
                 <textarea

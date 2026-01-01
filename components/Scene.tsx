@@ -69,7 +69,7 @@ export const Scene: React.FC<SceneProps> = ({ isDarkMode }) => {
       <Float speed={1.5} rotationIntensity={1} floatIntensity={1}>
         <mesh position={[-4, -2, -3]}>
           <boxGeometry args={[1, 1, 1]} />
-          <meshStandardMaterial color={isDarkMode ? "#8b5cf6" : "#7c3aed"} wireframe />
+          <meshStandardMaterial color={isDarkMode ? "#22d3ee" : "#7c3aed"} wireframe />
         </mesh>
       </Float>
     </>

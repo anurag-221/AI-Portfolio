@@ -31,7 +31,7 @@ export const Hero: React.FC<HeroProps> = ({ isDarkMode }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="mono text-cyan-400 text-sm md:text-base mb-4 tracking-widest font-medium uppercase">
+          <p className=" text-cyan-400 text-sm md:text-base mb-4 tracking-widest font-medium uppercase">
             Hi, my name is
           </p>
           <h1 className="text-5xl md:text-8xl font-extrabold tracking-tight mb-6">

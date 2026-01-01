@@ -75,7 +75,7 @@ export const Experience: React.FC<{ isDarkMode: boolean }> = () => {
                     <span className="p-2 bg-slate-900 rounded-lg text-cyan-400">
                       {exp.icon}
                     </span>
-                    <span className="mono text-xs font-bold text-slate-500 tracking-widest">{exp.period}</span>
+                    <span className=" text-xs font-bold text-slate-500 tracking-widest">{exp.period}</span>
                   </div>
                   <h3 className="text-xl font-bold mb-1 group-hover:text-cyan-400 transition-colors">{exp.title}</h3>
                   <p className="text-cyan-400 font-medium mb-4">{exp.company}</p>

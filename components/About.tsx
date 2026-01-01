@@ -21,7 +21,7 @@ export const About: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
                 className="rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 w-full object-cover aspect-square"
               />
               <div className="absolute bottom-6 left-6 right-6 glass-effect p-4 rounded-xl border-t border-white/10">
-                <p className="text-sm mono text-cyan-400">Status: Currently building cool things</p>
+                <p className="text-sm text-cyan-400">Status: Currently building cool things</p>
                 <p className="text-xs text-slate-500 mt-1">Delhi, India • Remote Available</p>
               </div>
             </div>
@@ -40,7 +40,7 @@ export const About: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
             
             <div className="space-y-6 text-slate-400 text-lg leading-relaxed">
               <p>
-                I am a <span className="text-slate-100 font-medium">frontend developer with 4+ years of experience</span> building responsive, high-performance web applications.
+                I am a <span className={`${isDarkMode ? 'text-slate-100' :'text-slate-800' } font-medium`}>frontend developer with 4+ years of experience</span> building responsive, high-performance web applications.
               </p>
               <p>
                 I specialize in <span className="text-cyan-400 font-mono">React, Tailwind CSS, and modern JavaScript</span>, with a strong focus on clean UI, smooth animations, and maintainable code.
@@ -51,7 +51,7 @@ export const About: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
               <p>
                 My passion lies in bridging the gap between design and technology. I enjoy solving complex UI challenges, optimizing performance, and translating designs into pixel-perfect, interactive interfaces.
               </p>
-              <p className="mono text-sm bg-slate-800/50 p-4 rounded-lg border border-slate-700">
+              <p className={`mono text-sm ${isDarkMode ? 'bg-slate-800/50' :'bg-slate-200/50' } p-4 rounded-lg border border-slate-700`}>
                 const passions = ["UI Engineering", "Performance Optimization", "Clean Architecture"];
                 <br />
                 const strengths = ["Debugging", "User Experience", "Fast Learning"];

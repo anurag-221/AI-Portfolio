@@ -52,7 +52,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-xl font-bold mono tracking-tighter"
+          className="text-xl font-bold tracking-tighter"
         >
           <span className="text-cyan-400">&lt;</span>
           Anurag
@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
           <div className="flex items-center space-x-4 ml-4 border-l border-slate-700 pl-6">
             <button 
               onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-slate-800 transition-colors text-inherit"
+              className={`p-2 rounded-full ${isDarkMode ? 'hover:bg-slate-800' : 'hover:bg-slate-200'} transition-colors text-inherit`}
               aria-label="Toggle theme"
             >
               {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
